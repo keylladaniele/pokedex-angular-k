@@ -1,27 +1,45 @@
 # PokedexAngularK
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.19.
+Esse projeto foi desenvolvido usando [Angular CLI](https://github.com/angular/angular-cli) versão 11.2.19.
 
-## Development server
+Pokédex com requisitação usando a API https://pokeapi.co
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Como iniciar aplicação localmente (siga os passos abaixo):
 
-## Code scaffolding
+• git clone https://github.com/keylladaniele/pokedex-angular-k
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+• npm install
 
-## Build
+• npm start ou ng serve
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+• Acessar http://localhost:4200/ no navegador
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Informações sobre a aplicação:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+• Uso de service para com url base para requisição e pesquisa de Pokémons;
 
-## Further help
+• Componentes personalizados;
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+• Função de pesquisa chamada com click no botão de busca ou com enter após digitar no form field;
+
+• Pokémon pode ser encontrado por nome ou número correspondente;
+
+• Botão de "carregar mais" que insere mais 20 pokémons à página;
+
+• Informações de atributos dos pokémons mostrados ao clicar no card de cada um;
+
+• Resposta em alert para pokémon não encontrado na pesquisa;
+
+• Tamanhos das barras de progresso de acordo com o valor encontrado para cada atributo;
+
+• Personalização feita com uso de Angular Material e .scss;
+
+• Módulo "material" criado para facilitar imports da aplicação dentro do projeto;
+
+• Pokédex de cada card possui animação que é ativada com hover;
+
+• Paleta de cores principal usando tons entre roxo e lilás;
+
+• Design responsivo com uso de flexbox;
