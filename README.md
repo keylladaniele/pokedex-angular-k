@@ -38,7 +38,7 @@ Pokédex com requisição usando a API https://pokeapi.co
 
 • Módulo "material" criado para facilitar imports da aplicação dentro do projeto;
 
-• Pokédex de cada card possui animação que é ativada com hover;
+• Pokebola de cada card possui animação que é ativada com hover;
 
 • Paleta de cores principal usando tons entre roxo e lilás;
 
