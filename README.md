@@ -2,7 +2,7 @@
 
 Esse projeto foi desenvolvido usando [Angular CLI](https://github.com/angular/angular-cli) versão 11.2.19.
 
-Pokédex com requisitação usando a API https://pokeapi.co
+Pokédex com requisição usando a API https://pokeapi.co
 
 ## Como iniciar aplicação localmente (siga os passos abaixo):
 
