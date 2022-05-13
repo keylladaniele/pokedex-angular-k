@@ -1,0 +1,72 @@
+<div class="img-tab">
+    <img *ngIf="imagePokemon" [src]="pokemon.sprites?.front_default" [alt]="pokemon.name">
+</div>
+
+<mat-tab-group class="detalhes-pokemon">
+    <mat-tab label="Sobre">
+        <div class="tab-detalhes">
+            <div class="detalhes-item">
+                <div class="item-poke">Altura: </div>
+                <div class="item-poke">Peso: </div>
+                <div class="item-poke">Habilidades: </div>
+            </div>
+            <div class="detalhes-item">
+                <div>{{pokemon.height}}</div>
+                <div>{{pokemon.weight}}</div>
+                <div>{{getAbilities()}}</div>
+            </div>
+        </div>
+    </mat-tab>
+
+    <mat-tab label="Atributos Base">
+        <div class="tab-detalhes">
+            <div class="detalhes">
+                <div class="barra-habilidade">
+                    <div class="item-poke">HP:</div>
+                    <div class="barra-item">
+                        <app-progress-bar [value]="pokemon.stats[5].base_stat"></app-progress-bar>
+                    </div>
+                </div>
+
+                <div class="barra-habilidade">
+                    <div class="item-poke">Ataque: </div>
+                    <div class="barra-item">
+                        <app-progress-bar [value]="pokemon.stats[4].base_stat"></app-progress-bar>
+                    </div>
+                </div>
+
+                <div class="barra-habilidade">
+                    <div class="item-poke">Defesa:</div>
+                    <div class="barra-item">
+                        <app-progress-bar [value]="pokemon.stats[3].base_stat"></app-progress-bar>
+                    </div>
+                </div>
+
+                <div class="barra-habilidade">
+                    <div class="item-poke">Ataque Especial:</div>
+                    <div class="barra-item">
+                        <app-progress-bar [value]="pokemon.stats[2].base_stat"></app-progress-bar>
+                    </div>
+                </div>
+
+                <div class="barra-habilidade">
+                    <div class="item-poke">Defesa Especial:</div>
+                    <div class="barra-item">
+                        <app-progress-bar [value]="pokemon.stats[1].base_stat"></app-progress-bar>
+                    </div>
+                </div>
+
+                <div class="barra-habilidade">
+                    <div class="item-poke">Velocidade:</div>
+                    <div class="barra-item">
+                        <app-progress-bar [value]="pokemon.stats[0].base_stat"></app-progress-bar>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </mat-tab>
+
+    
+
+</mat-tab-group>

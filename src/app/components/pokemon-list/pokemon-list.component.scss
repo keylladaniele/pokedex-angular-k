@@ -1,0 +1,133 @@
+@import url(../../../styles.scss);
+
+.content {
+     margin: 0 auto;
+     width: 90vw;
+     padding-top: 40px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.img-logo {
+    width: 30vw;
+}
+
+mat-form-field {
+    width: 55vw;
+    margin: 5px;
+}
+
+.linha-busca {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+button {
+    font-size: 16px;
+    width: 15vw;
+    height: 70px;
+    margin: 5px;
+    background-color: rgb(184, 123, 184);
+    color: white;
+    border-radius: 20px;
+}
+
+.botao-carregar button {
+    width: 25vw;
+}
+
+button:hover {
+    background-color: purple;
+}
+
+button:active {
+    background-color: rgb(63, 11, 27);
+}
+
+.bar-search {
+    width: 90%;
+    height: 15px;
+}
+
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+mat-card, .lista-pokemon {
+    border-radius: 20px;
+    border-bottom: 3px solid purple;
+    width: 320px;
+    height: 170px;
+    margin: 10px;
+    padding: 40px 10px 0px 10px;
+    background-color: #f8f2fb;
+    cursor: pointer;
+}
+
+mat-card:hover, .lista-pokemon:hover {
+    background-color: white;
+}
+
+mat-card:active, .lista-pokemon:active {
+    background-color: rgb(250, 215, 226);
+}
+
+.card {
+    display: flex;       
+    justify-content: space-evenly;
+    text-transform: capitalize;
+}
+
+.bg-card {
+    height: 60px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+.bg-card:hover {
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+.img-card {
+    width: 150px;
+    height: 150px;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.type-poke {
+    background-color: rgba(128, 0, 128, 0.459);
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.botao-carregar {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+
